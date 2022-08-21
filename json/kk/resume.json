@@ -1,0 +1,236 @@
+{
+  "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
+  "meta": {
+    "theme": "elegant"
+  },
+  "basics": {
+    "name": "Zak McKracken",
+    "label": "(fake) news reporter",
+    "picture": "https://www.giantbomb.com/a/uploads/square_small/7/73970/2291917-zak_mckracken.png"
+    "url": "https://matteomigliaccio.it",
+    "summary": "Reporter for the (dis)reputable National Inquisitor",
+    "location": {
+      "city": "Seattle",
+      "countryCode": "US",
+      "region": "Washington"
+    },
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "username": "matteomigliaccio",
+        "url": "https://www.linkedin.com/in/matteomigliaccio/"
+      },
+      {
+        "network": "Github",
+        "username": "nnsense",
+        "url": "https://github.com/nnsense"
+      },
+      {
+        "network": "SoundCloud",
+        "username": "nnsense",
+        "url": "https://soundcloud.com/nnsense"
+      }
+    ]
+  },
+  "work": [
+    {
+      "name": "Rebura",
+      "location": "London, United Kingdom",
+      "description": "Consultancy - Fully Managed AWS Cloud Services",
+      "position": "Lead DevOps Engineer",
+      "url": "https://rebura.com",
+      "startDate": "2022-01-01",
+      "summary": "Rebura is one of the fastest-growing AWS Consulting Partners, exclusively dedicated to using AWS technologies to help their customers increase productivity, scalability, cost efficiency, and security.\nI’ve joined Rebura in January 2022, and we’re in the process of building the team I’m supposed to lead. I’ve been responsible for each technical interview during the first 5 months, helping to hire Rebura’s new engineers. I’ve also been involved into project planning, to define time and effort for new customers. On the engineering side, I’ve cloned a whole terraform based infrastructure over 5 years old, which required to be fixed and upgraded while copying it to another region without downtime.",
+      "highlights": [
+        "Serverless services", "ECS", "lambda", "API gateway", "SES", "SNS", "SQS", "Beanstalk", "terraform", "CloudFormation"
+      ]
+    },
+    {
+      "name": "Geospock",
+      "location": "Cambridge, United Kingdom",
+      "description": "GeoSpock DB is the SQL powered high performance analytics database for connected device data",
+      "position": "Senior DevOps Engineer",
+      "url": "https://geospock.com",
+      "startDate": "2021-01-01",
+      "endDate": "2021-12-31",
+      "summary": "I have been the first and only cloud engineer for the first 4 months in Geospock, I’ve designed and deployed the company application’s infrastructure on Kubernetes using IaC tools such as Terraform and Helm. I’ve worked closely with the developers to enhance the Kubernetes deployment, working on docker images, and developing their CI/CD pipeline allowing to build/test and the helm chart responsible for the application deployment within the cluster on EKS.\n\nI have implemented multiple features such as logging, monitoring, kubernetes security (role-based service accounts), besides helping my colleagues in day-by-day implementations. I’ve developed the installation script which the company planned to use to deploy the application into the customer’s AWS account, I’ve been involved into each choice regarding the user experience, enforcing best practices and planning each integration carefully to get a reliable, professional deployment while keeping it as simple as possible to deploy and maintain. Such script was a terraform wrapper, like terragrunt, focused on user experience, error management, and logging for remote troubleshooting. Unfortunately, even though the idea was good, the company eventually closed in December 2021.",
+      "highlights": [
+        "AWS (EC2/VPC/EKS/Route53/IAM/S3/RDS)",
+        "Linux (OS, Bash, tuning)",
+        "Python",
+        "CI/CD pipelines (bitbucket/Jenkins)",
+        "terraform",
+        "helm",
+        "docker",
+        "Kubernetes"
+      ]
+    },
+    {
+      "name": "Featurespace",
+      "location": "Cambridge, United Kingdom",
+      "description": "Featurespace is world's leading provider of Adaptive Behavioural Analytics technology.\nFeaturespace’s ARIC™ platform monitors data in real-time, spotting anomalies enabling to outsmart risk.",
+      "position": "Lead Cloud Architect",
+      "startDate": "2017-01-01",
+      "endDate": "2020-12-31",
+      "summary": "I’ve designed the company's cloud infrastructure ground-up and I'm managing it, keeping it up to date by implementing new features and improving security. Besides using the usual automation tools such as Terraform, Ansible and Salt, I develop my own scripts and GUIs in several languages (Bash, Perl, Python, JS, PHP, Powershell), I’m responsible for Cloud costs reporting, monitoring, and our software deployments on cloud. Having started the team, I’ve been its team leader right from the beginning, in 2018. The team has grown, and we’re keeping hiring new cloud engineers since our SaaS solution has become an important offering for our customers. We've started using Kubernetes as the evolution in our cloud offer.",
+      "url": "https://featurespace.com",
+      "highlights": [
+        "**Side project 1**: I’ve built an automated system in python to parse and load AWS infrastructure’s data into MySQL. It is saving thousands of dollars on the infrastructure as it makes managing, reporting, query, and monitoring way easier",
+        "**Side project 2**: I have designed a chat bot with Lambda and an ALB to send notifications directly to Slack and let cloudops engineers asking questions related the infrastructure. The cloud bot is able to create tickets and report issues on the infrastructure",
+        "**Side project 3**: I’ve been able to restore the ticketing database (which was also used as technical reference) after its deletion by writing a script which was fetching all user’s email and working out all ticket’s field by evaluating subject and body.",
+        "AWS - I've designed and built the company's infrastructure ground up",
+        "Linux (OS, Bash, tuning)",
+        "Python",
+        "Salt",
+        "terraform",
+        "docker"
+      ]
+    },
+    {
+      "name": "Hewlett Packard Enterprise",
+      "location": "Cambridge, United Kingdom",
+      "position": "Linux/Microsoft System Administrator",
+      "startDate": "2016-04-01",
+      "endDate": "2016-12-31",
+      "summary": "Managing of Linux/Microsoft based cloud infrastructure, thousands Linux boxes centralized managing through scripting. \nPostgres, DB2, MySQL scripting / data elaboration.\nData/Mail elaboration, deduplication and archiving.\nIndexing services (Idol, Apache Lucene)\nBash/Perl scripting\n\nLeft after just 9 months as managing a proprietary software with no infrastructure design involved wasn't my main objective or improving my skills.",
+      "url": "https://www.linkedin.com/company/hewlett-packard-enterprise/",
+      "highlights": [
+        "**Side project 1**: During the first six months I developed a custom solution to fetch (perl), store (MySQL) and present (php/js) data from a read-only web ticketing system, where my team’s tickets were assigned. The challenge was to trick the authentication system into thinking the script was a human and get the cookie to fetch the data looking up for HTML tables and records. Fetched data allowed me to present deadlines automatically and in real time, formatting conveniently the output, elaborate historical data and automate processes like sending an extract on a spreadsheet when required (spreadsheets were written natively in Perl) or share working status directly on a webpage. The software is still in use at Microfocus, the company who acquired Autonomy’s Digital Safe.",
+        "**Side project 2**: Shifts were still written on a physical whiteboard. I wrote a webapp allowing to easily check and manage shifts online, using mysql as backend. This is linked to the previous project, showing – for example - if some important ticket is assigned to an engineer on holiday."
+      ]
+    },
+    {
+      "name": "Sistemi Informativi",
+      "location": "Rome, Italy",
+      "position": "Active Directory and Exchange infrastructure Architect / Administration",
+      "startDate": "1999-11-30",
+      "endDate": "2016-03-31",
+      "summary": "I've been working at Sistemi Informativi for over 15 years, where I've started my career as a junior sysadmin. During those years I've learnt how to deal with a customer, even an angry one. which I think has been one of the most valuable skills during the next years. I've spent the first 5 years at San Paolo IMI bank, giving support to the customer on site. I've moved from that role as a senior sysadmin, and started working into infrastructure management and then design thorugh the years. My last two clients, AdR (Aeroporti di Roma) and Ministero delle politiche agricole alimentari e forestali (MiPAAF), have been the most important, where I had to design and manage the whole infrastructure - and deal with the customer's needs - by myself. Since there was not much more I could learn about on-premise deployments, I've eventually decided to move to the UK and start learning about cloud infrastructures, which was also giving me the chance to use more Linux.",
+      "highlights": [
+        "Microsoft Servers",
+        "Active Directory (advanced)",
+        "Scripting: VBS, Powershell",
+        "Web: PHP, javascript, HTML",
+        "On-Site Support"
+      ]
+    }
+  ],
+  "volunteer": [
+    {
+      "organization": "UnTesoroDiCane",
+      "position": "Webmaster",
+      "url": "https://untesorodicane.org",
+      "startDate": "2015-01-01",
+      "summary": "Charity aiming to rescue dogs and give them a second chance. I've build and maintained their website from 2015.",
+      "highlights": []
+    }
+  ],
+  "education": [
+    {
+      "institution": "Università degli Studi Guglielmo Marconi",
+      "area": "Information Technology",
+      "studyType": "Bachelor of Information Technology",
+      "startDate": "2012-12-31",
+      "endDate": "2016-12-31",
+      "score": "",
+      "courses": [ "C programming" ]
+    }
+  ],
+  "certificates": [
+    {
+      "name": "RHCSA",
+      "issuer": "Red Hat",
+      "date": "2014-03-31",
+      "url": "https://www.redhat.com/wapps/training/certification/verify.html;jsessionid=fPF4uHOPVymOt1XHxb8ea8BI.2d6dc12e?certNumber=140-038-027+&verify=Verify"
+    },
+    {
+      "name": "RHCE",
+      "issuer": "Red Hat",
+      "date": "2015-12-31",
+      "url": "https://www.redhat.com/rhtapps/certification/verify/?certId=140-038-027"
+    },
+    {
+      "name": "Microsoft Certified Solutions Expert (MCSE)",
+      "issuer": "Microsoft"
+    }
+  ],
+  "skills": [
+    {
+      "name": "Amazon Web Services (AWS)",
+      "level": "High",
+      "keywords": ["EKS", "ECS", "VPC", "EC2", "Lambda", "Billing"]
+    },
+    {
+      "name": "Linux System Administration",
+      "level": "High",
+      "keywords": []
+    },
+    {
+      "name": "Microsoft Server Administration",
+      "level": "High",
+      "keywords": []
+    },
+    {
+      "name": "Configuration management",
+      "level": "",
+      "keywords": ["SaltStack", "Ansible"]
+    },
+    {
+      "name": "Scripting",
+      "level": "",
+      "keywords": ["Python", "Perl", "PowerShell", "Bash"]
+    },
+    {
+      "name": "Containerization",
+      "level": "",
+      "keywords": ["Docker", "Kubernetes"]
+    },
+    {
+      "name": "Web Design",
+      "level": "",
+      "keywords": ["HTML", "JavaScript", "PHP"]
+    },
+    {
+      "name": "Continuous Integration and Continuous Delivery (CI/CD)",
+      "level": "",
+      "keywords": ["BitBucket pipelines", "Jenkins", "Github actions"]
+    },
+    {
+      "name": "Database",
+      "level": "",
+      "keywords": ["MySql", "Postgres", "DynamoDB"]
+    },
+    {
+      "name": "Infrastructure as Code",
+      "level": "",
+      "keywords": ["Terraform", "CloudFormation"]
+    },
+    {
+      "name": "Active Directory",
+      "level": "",
+      "keywords": [ "Schema", "ADSI" ]
+    }
+  ],
+  "languages": [
+    {
+      "fluency": "Professional Working",
+      "language": "English"
+    },
+    {
+      "fluency": "Native Speaker",
+      "language": "Italian"
+    }
+  ],
+  "interests": [
+    {
+      "name": "Retrocomputing",
+      "keywords": [
+        "Commodore",
+        "Amiga"
+      ]
+    },
+    {
+      "name": "FPV pilot"
+    }
+  ]
+}
