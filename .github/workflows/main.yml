@@ -13,12 +13,17 @@ jobs:
   resume:
     runs-on: ubuntu-latest
     container:
-      # docker://resume:latest
-      image: resume:latest
+      # docker://svendowideit/jsonresume:latest
+      image: svendowideit/jsonresume:latest
 
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
+      - name: resume - Add themes 
+        run: |
+          npm install -g \
+            jsonresume-theme-elegant
+
       - name: resume - index.html update 
         run: |
           for USRDIR in $GITHUB_WORKSPACE/html/*/ ; do
