@@ -19,13 +19,14 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
-      - name: resume - Add themes 
+      - name: resume - Add themes
         run: |
           npm config set unsafe-perm true
           npm install -g \
             jsonresume-theme-elegant
 
-      - name: resume - index.html update 
+      - name: resume - index.html update
+        shell: bash
         run: |
           for USRDIR in $GITHUB_WORKSPACE/html/*/ ; do
               pushd "$USRDIR"
