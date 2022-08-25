@@ -19,11 +19,6 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
-      - name: resume - Add themes
-        run: |
-          npm config set unsafe-perm true
-          npm install -g \
-            jsonresume-theme-elegant
 
       - name: resume - index.html update
         shell: bash
@@ -38,6 +33,6 @@ jobs:
       - name: Update repo
         uses: test-room-7/action-update-file@v1
         with:
-            file-path: $GITHUB_WORKSPACE/html/*/index.html
+            file-path: html/**/*.html
             commit-msg: Update resumes
             github-token: ${{ secrets.GITHUB_TOKEN }}
