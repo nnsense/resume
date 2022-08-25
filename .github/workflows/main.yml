@@ -14,7 +14,7 @@ jobs:
     runs-on: ubuntu-latest
     container:
       # docker://svendowideit/jsonresume:latest
-      image: svendowideit/jsonresume:latest
+      image: fixl/json-resume:latest
 
     steps:
       - name: Checkout repository
@@ -24,14 +24,14 @@ jobs:
           npm config set unsafe-perm true
           npm install -g \
             jsonresume-theme-elegant
-          apk update && apk upgrade && apk add bash
 
       - name: resume - index.html update
         shell: bash
         run: |
+          THEME="jsonresume-theme-elegant"
           for USRDIR in $GITHUB_WORKSPACE/html/*/ ; do
               pushd "$USRDIR"
-              resume export --theme /usr/local/lib/node_modules/${THEME} --format html index.html -r resume.json
+              resume export --theme /usr/local/lib/node_modules/${THEME} --format html $GITHUB_WORKSPACE/html/$USRDIR/index.html -r $GITHUB_WORKSPACE/html/$USRDIR/resume.json
               popd 2>&1 > /dev/null
           done
 
