@@ -33,6 +33,6 @@ jobs:
       - name: Update repo
         uses: test-room-7/action-update-file@v1
         with:
-            file-path: html/mm/index.html
+            file-path: html/**/*.html
             commit-msg: Update resumes
             github-token: ${{ secrets.GITHUB_TOKEN }}
