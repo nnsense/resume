@@ -10,7 +10,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  resume:
+  resume_job:
     runs-on: ubuntu-latest
     container:
       # docker://svendowideit/jsonresume:latest
@@ -31,7 +31,7 @@ jobs:
           THEME="jsonresume-theme-elegant"
           for USRDIR in $GITHUB_WORKSPACE/html/*/ ; do
               pushd "$USRDIR"
-              resume export --theme /usr/local/lib/node_modules/${THEME} --format html $GITHUB_WORKSPACE/html/$USRDIR/index.html -r $GITHUB_WORKSPACE/html/$USRDIR/resume.json
+              resume export --theme /usr/local/lib/node_modules/${THEME} --format html $USRDIR/index.html -r $USRDIR/resume.json
               popd 2>&1 > /dev/null
           done
 
