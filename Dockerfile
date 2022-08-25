@@ -10,3 +10,9 @@ RUN npm install -g \
   jsonresume-theme-stackoverflow-skills \
   jsonresume-theme-skills \
   jsonresume-theme-spartan-skills
+
+COPY entrypoint.sh /entrypoint.sh
+
+ENTRYPOINT ["/entrypoint.sh"]
+CMD ["/git"]
+
