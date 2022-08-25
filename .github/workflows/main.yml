@@ -24,6 +24,7 @@ jobs:
           npm config set unsafe-perm true
           npm install -g \
             jsonresume-theme-elegant
+          apk update && apk upgrade && apk add bash
 
       - name: resume - index.html update
         shell: bash
@@ -33,6 +34,7 @@ jobs:
               resume export --theme /usr/local/lib/node_modules/${THEME} --format html index.html -r resume.json
               popd 2>&1 > /dev/null
           done
+
       - name: Update repo
         uses: test-room-7/action-update-file@v1
         with:
